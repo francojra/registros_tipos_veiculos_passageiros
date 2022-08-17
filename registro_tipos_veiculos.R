@@ -14,6 +14,9 @@
 
 library(tidyverse)
 
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
+veh <- read.csv("new-vehicles-type-area.csv")
+view(veh)
 
 
