@@ -19,4 +19,9 @@ library(tidyverse)
 veh <- read.csv("new-vehicles-type-area.csv")
 view(veh)
 
+# Selecionar dados -------------------------------------------------------------------------------------------------------------------------
+
+veh1 <- veh %>%
+  select(-Code) %>%
+  view()
 
