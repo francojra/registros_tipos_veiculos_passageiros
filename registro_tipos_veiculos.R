@@ -33,12 +33,17 @@ options(scipen = 999)
 
 g1 <- ggplot(veh1, aes(x = Year, y = battery_electric_number)) +
   geom_col() +
-  scale_y_continuous(labels = comma)
+  scale_y_continuous(labels = comma) +
+  labs(x = "Anos", y = "Bateria totalmente elétrica",
+       title = "Registros de veículos de passageiros") +
+  theme_bw(base_size = 13)
 g1
 
 g2 <- ggplot(veh1, aes(x = Year, y = plugin_hybrid_number)) +
   geom_col() +
-  scale_y_continuous(labels = comma)
+  scale_y_continuous(labels = comma) +
+  labs(x = "Anos", y = "Híbridos elétricos plug-in") +
+  theme_bw(base_size = 13)
 g2
 
 g3 <- ggplot(veh1, aes(x = Year, y = full_mild_hybrid_number)) +
